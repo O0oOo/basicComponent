@@ -36,7 +36,7 @@ public class NextExecTimeAlgo {
      *  @param memberConfig 
      *  @return
      */
-    private static Date nextTime(int currExecTime, DelayMemberConfig memberConfig) {
+    public static Date nextTime(int currExecTime, DelayMemberConfig memberConfig) {
         if (currExecTime <= 0 && memberConfig.getFirstDelaySecs() != null) {
             // 最小2s
             return DateUtils.addSeconds(new Date(), Math.max(memberConfig.getFirstDelaySecs(), 2));
