@@ -7,23 +7,23 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class DelayHandlerRet {
-    public static final DelayHandlerRet SUCC = new DelayHandlerRet(true);
-    public static final DelayHandlerRet FAIL = new DelayHandlerRet(false);
+public class DelayHandleRet {
+    public static final DelayHandleRet SUCC = new DelayHandleRet(true);
+    public static final DelayHandleRet FAIL = new DelayHandleRet(false);
 
     private boolean success;
     private String bizRespMemo;
 
-    public DelayHandlerRet() {
+    public DelayHandleRet() {
         super();
     }
 
-    public DelayHandlerRet(boolean success, String bizRespMemo) {
+    public DelayHandleRet(boolean success, String bizRespMemo) {
         this.success = success;
         this.bizRespMemo = bizRespMemo;
     }
 
-    public DelayHandlerRet(boolean success) {
+    public DelayHandleRet(boolean success) {
         super();
         this.success = success;
     }

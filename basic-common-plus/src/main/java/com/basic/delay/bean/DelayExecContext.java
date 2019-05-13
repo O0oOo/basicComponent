@@ -17,7 +17,7 @@ public class DelayExecContext {
     private String bizValue;//业务值
     private Date startExecTime;//本次开始执行时间
 
-    private Date firstEexcTime;//第一次执行时间
+    private Date firstExecTime;//第一次执行时间
     private Class<? extends DelayHandler> handlerClass;//处理类
 
     private List<DelayLogBean> latestExecLogs;//最近执行日志，最多50条
