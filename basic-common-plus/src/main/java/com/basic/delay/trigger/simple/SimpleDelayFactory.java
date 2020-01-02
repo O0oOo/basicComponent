@@ -107,7 +107,7 @@ public class SimpleDelayFactory {
      * @param nextExecTime 下次执行时间
      * @param lastError    上次是否错误
      */
-    private void retryAdd(DelayExecContext execContext, Date nextExecTime, boolean lastError) {
+    public void retryAdd(DelayExecContext execContext, Date nextExecTime, boolean lastError) {
         int execTimes = execContext.getExecTimes();
         DelayMemberConfig memberConfig = execContext.getMemberConfig();
         if (nextExecTime == null && lastError) {
